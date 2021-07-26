@@ -1,0 +1,50 @@
+<section class="banner">
+    <mat-card class="center-card">
+        <h2>Your Bill Detail</h2>
+    </mat-card>
+    <br>
+    <mat-card class="form-card">
+            <div class="example-container mat-elevation-z2">
+                <table mat-table #table [dataSource]="dataSource">
+                    <ng-container matColumnDef="memberid">
+                        <th mat-header-cell *matHeaderCellDef> MEMBER ID </th>
+                        <td mat-cell *matCellDef="let billDetail"> {{billDetail.memberId}} </td>
+                    </ng-container>
+            
+                    <ng-container matColumnDef="policyid">
+                        <th mat-header-cell *matHeaderCellDef> POLICY ID </th>
+                        <td mat-cell *matCellDef="let billDetail"> {{billDetail.policyId}} </td>
+                    </ng-container>
+            
+                    <ng-container matColumnDef="lastdate">
+                        <th mat-header-cell *matHeaderCellDef> LAST PREMIUM DATE </th>
+                        <td mat-cell *matCellDef="let billDetail"> {{billDetail.lastPremiumDate | date:'dd-MM-yyyy'}} </td>
+                    </ng-container>
+            
+                    <ng-container matColumnDef="lastdue">
+                        <th mat-header-cell *matHeaderCellDef> PREMIUM AMOUNT DUE </th>
+                        <td mat-cell *matCellDef="let billDetail"> {{billDetail.premiumAmtDue}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="lastpay">
+                        <th mat-header-cell *matHeaderCellDef> LAST PAYMENT INFO </th>
+                        <td mat-cell *matCellDef="let billDetail"> {{billDetail.lastPaymentInfo}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="duedate">
+                        <th mat-header-cell *matHeaderCellDef> DUE DATE </th>
+                        <td mat-cell *matCellDef="let billDetail"> {{billDetail.dueDate | date:'dd-MM-yyyy'}} </td>
+                    </ng-container>
+            
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+            </div>
+            <div>
+                <span  class="btn-right"> 
+                    <button class="mat-raised-button mat-accent text-white" routerLink="/memberHome">Member Portal</button>
+                    <button class="mat-raised-button mat-light text-white" routerLink="/viewbilldetails" style="margin-right: 14px;">Back</button>
+                </span>
+            </div>
+    </mat-card>
+</section>

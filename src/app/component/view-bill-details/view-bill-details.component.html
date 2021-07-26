@@ -1,0 +1,23 @@
+<section class="banner">
+    <mat-card class="center-card">
+        <h2>Submit your Bill Details</h2>
+    </mat-card>
+    <br>
+    <mat-card class="form-card">
+            <div class="example-container">
+                <mat-form-field>
+                    <input matInput placeholder="Enter the Member Id" [(ngModel)] ="billDetail.memberId" required>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Enter the Policy Id" [(ngModel)] ="billDetail.policyId" required>
+                </mat-form-field>
+            </div>
+            <div>
+                <span> 
+                    <span *ngIf="hasError" style="size: 3px; color: red; display: inline; margin-right: 56%; text-transform: lowercase">{{ message }}</span>
+                    <button class="mat-raised-button mat-accent text-white btn-right" (click)="submitBillDetail()">Submit</button>
+                    <button class="mat-raised-button mat-light text-white btn-right" routerLink="/memberHome" style="margin-right: 14px;">Back</button>
+                </span>
+            </div>
+    </mat-card>
+</section>

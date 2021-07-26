@@ -1,0 +1,32 @@
+<section class="banner">
+    <mat-card class="center-card">
+        <h2>Submit your Claim Details</h2>
+    </mat-card>
+    <br>
+    <mat-card class="form-card">
+            <div class="example-container">
+                <mat-form-field>
+                    <input matInput placeholder="Enter the Member Id" [(ngModel)] ="memberSubmitClaim.memberId" required>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Enter the Policy Id" [(ngModel)] ="memberSubmitClaim.policyId" required>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Enter the Hospital Id" [(ngModel)] ="memberSubmitClaim.hospitalId" required>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Enter the Bill Amount" [(ngModel)] ="memberSubmitClaim.totalBill" required>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Enter the Claim Amount" [(ngModel)] ="memberSubmitClaim.totalClaimedAmt" required>
+                </mat-form-field>
+            </div>
+            <div>
+                <span  class="btn-right"> 
+                    <button class="mat-raised-button mat-accent text-white" (click)="submitMemberClaim()">Submit</button>
+                    <button class="mat-raised-button mat-light text-white" routerLink="/memberHome" style="margin-right: 14px;">Back</button>
+                    <span *ngIf="hasError" style="size: 4px; color: red; display: inline; margin-right: 59%;">fill all the fields *</span>
+                </span>
+            </div>
+    </mat-card>
+</section>

@@ -1,0 +1,46 @@
+*{
+    margin:0;
+}
+.banner {
+	
+    height: 89.7vh;
+	background:url(src\assets\images\wave.png);
+	background-color: white;
+	background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+	color:	#414a4c;
+}
+button{
+    width:200px;
+}
+.example-card {
+    max-width: min-content;
+    display: block;
+    text-align: center;
+}
+.center-card{
+    margin-top: 5%;
+    margin: auto;
+    max-width: 97%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.548);
+}
+.text-center{
+    border: #414a4c;
+    border-radius: 15px;
+    margin-top: 5%;
+    text-align: start;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  

@@ -1,0 +1,13 @@
+<mat-toolbar color="primary" style="min-height: 50px !important; height: 50px !important; position: relative; z-index: 5;">
+    <mat-toolbar-row >
+        <span><a mat-button routerLink="/home" style="font-size: large"><span>Claims Management Portal</span></a></span>
+        <span class="example-fill-remaining-space"></span>
+        <span class="align-center"></span>
+        <span class="example-spacer"></span>
+        <a mat-button routerLink="/home" class="nav-link"> <mat-icon>home</mat-icon></a>
+        <a mat-button *ngIf="!loginService.isUserLoggedIn()" routerLink="/" class="nav-link">LOGIN</a>
+        <a mat-button *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">LOGOUT</a>
+        <a mat-button routerLink="/aboutus" class="nav-link">ABOUT US</a>
+        <a mat-button routerLink="/admin" class="nav-link">ADMIN-MONITOR</a>
+    </mat-toolbar-row>
+</mat-toolbar>

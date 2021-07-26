@@ -1,0 +1,24 @@
+.banner {
+	
+    height: 89.7vh;
+	background:url(src\assets\images\wave.png);
+	background-color: white;
+	background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+	color:	#414a4c;
+}
+button{
+    width:200px;
+}
+.example-card {
+    margin: auto;
+    max-width: min-content;
+    display: block;
+    text-align: center;
+}
+.text-center{
+    text-align: center;
+    padding-left: 20%;
+    padding-top: 15%;
+}
