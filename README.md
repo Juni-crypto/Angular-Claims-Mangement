@@ -1,6 +1,4 @@
-# AngularJwt
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
+# Angular-Claims-Mangement
 
 ## Development server
 
@@ -25,3 +23,22 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+Claims-Management-MFPE PROJECT 
+ 
+|TeamMembers|Module Worked On|
+|--|--|
+|Karthik Bharathi S N  | Angular Frontend|
+|  Shreya Bhattacharya|Authorization |
+| Hemachander R | Member Service |
+|Archana Kumari  |Policy Service  |
+| Ayush Patel  | Claims Service |
+
+  Run all the microservices individually and Run the Angular code 
+  with 
+  
+
+    npm install
+    npm start or ng serve
+
