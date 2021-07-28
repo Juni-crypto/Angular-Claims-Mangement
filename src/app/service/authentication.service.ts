@@ -20,7 +20,7 @@ export class AuthenticationService {
       password:password
     };
     return this.httpClient
-      .post<any>("http://localhost:8089/api/auth/login", userlogin)
+      .post<any>("http://authservice-env.eba-3jtuenxh.us-west-2.elasticbeanstalk.com/api/auth/login", userlogin)
       .pipe(
         map(userData => {
             sessionStorage.setItem("username", username);

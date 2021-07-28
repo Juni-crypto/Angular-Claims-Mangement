@@ -13,8 +13,8 @@ import { PolicyResult } from '../model/policy-result';
   providedIn: 'root'
 })
 export class MemberService {
-  BASE_URL="http://localhost:8081";
-  BASE_URL1="http://localhost:8083";
+  BASE_URL="http://memberservice-env.eba-nepmk5vx.us-west-2.elasticbeanstalk.com";
+  BASE_URL1="http://policyservice-env.eba-cue4qxcf.us-west-2.elasticbeanstalk.com";
   constructor(private httpClient: HttpClient) {}
 
   public submitMemberClaim(memberSubmitClaim:MemberSubmitClaim):Observable<any>{
